@@ -26,8 +26,8 @@ ep4_path="python_scripts"
 # This is where your simulations and outputs will be stored
 user = os.getlogin()
 user_dir= f'FE_{user}'
-job_directory = os.path.join('adithya/EMOD', user_dir, 'FE-2023-examples/experiments')
+job_directory = os.path.join('/EMOD/projects', user_dir, 'FE-2023-examples/experiments')
 os.makedirs(job_directory, exist_ok=True)
 
 # This is the path to the sisf image used to run EMOD
-SIF_PATH = "--bind adithya/dtk_run_rocky_py39.sif"
+SIF_PATH = "--bind /EMOD/projects /EMOD/projects/images/dtk_run_rocky_py39.sif"
