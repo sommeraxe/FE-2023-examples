@@ -17,7 +17,7 @@ plugins_folder = "EMOD/download/reporter_plugins"
 
 # This is where your inputs are located
 ROOT_DIR = os.path.abspath(os.path.dirname(__file__))
-input_dir = os.path.join(ROOT_DIR, "inputs")
+input_dir = "/home/adithya/EMOD/projects/b1139/FE-2023-examples/inputs"
 
 
 ep4_path="python_scripts"
