@@ -61,8 +61,7 @@ def general_sim(selected_platform):
     """
 
     # Set platform and associated values, such as the maximum number of jobs to run at one time
-    platform = Platform(selected_platform, job_directory=manifest.job_directory, partition='b1139', time='2:00:00',
-                            account='b1139', modules=['singularity'], max_running_jobs=10)
+    platform = Platform(selected_platform, job_directory=manifest.job_directory, time='2:00:00', modules=['singularity'], max_running_jobs=10)
 
     # create EMODTask 
     print("Creating EMODTask (from files)...")
